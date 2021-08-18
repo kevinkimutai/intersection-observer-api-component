@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+body {
+  background: #fefefe;
+  overflow-x: hidden;
+  perspective: 100rem;
+}
+h2 {
+  color: #fefefe;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 100px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  transform: translateY(40%);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+/* .section:nth-of-type(even) {
+  transform: translateX(-400%);
+} */
+
+.section.show {
+  transform: translateY(0);
+  opacity: 1;
+}
